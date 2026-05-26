@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GameVault | About & Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h2>GAMEVAULT</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="game-detail.html">Featured Game</a></li>
+                <li><a href="rankings.html">Rankings</a></li>
+                <li><a href="contact.html" class="active">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="neon-tag">System Administration</span>
+            <h1>About The Vault Creator</h1>
+            <p>Learn about Nathan's vision and submit your own game parameters directly to the database.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="about-wrapper">
+            
+            <section class="about-bio">
+                <h2>Project Purpose</h2>
+                <p>GameVault was developed by Nathan for Web Development Assessment 2. The core objective is to map creative design theory alongside interactive programming strategies to analyze modern gaming landscapes.</p>
+                <p>Every review hosted inside this ecosystem stems from verified gameplay hours, emphasizing pure mechanical loops over industry marketing trends.</p>
+            </section>
+
+            <section class="form-section">
+                <h2>Database Submission Form</h2>
+                <form id="vaultForm" onsubmit="event.preventDefault(); document.getElementById('successMessage').style.display = 'block';">
+                    
+                    <div class="form-group">
+                        <label for="explorerName">Explorer Name:</label>
+                        <input type="text" id="explorerName" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameTitle">Game Submission Title:</label>
+                        <input type="text" id="gameTitle" placeholder="e.g., League of Legends" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="targetScore">Target Ranking Score (1-10):</label>
+                        <input type="number" id="targetScore" min="1" max="10" placeholder="10" required>
+                    </div>
+
+                    <button type="submit" class="form-btn">Log to Database</button>
+                </form>
+
+                <div id="successMessage" class="hidden-message" style="margin-top: 20px; border-top: 1px solid #2e3c4e; padding-top: 15px;">
+                    <h3>Transmission Successful!</h3>
+                    <p>Nathan has intercepted your submission files. Entry logged securely.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© Nathan 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

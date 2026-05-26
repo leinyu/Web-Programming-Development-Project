@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GameVault | Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h2>GAMEVAULT</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="game-detail.html">Featured Game</a></li>
+                <li><a href="rankings.html">Rankings</a></li>
+                <li><a href="contact.html">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="neon-tag">Vault Database</span>
+            <h1>Comprehensive Game Reviews</h1>
+            <p>In-depth grading scales covering gameplay mechanics, graphic fidelity, and completion runs.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div class="filter-wrapper">
+            <span>Filter Category:</span>
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="action">Action / Open World</button>
+            <button class="filter-btn" data-filter="sandbox">Sandbox</button>
+            <button class="filter-btn" data-filter="simulation">Simulation</button>
+        </div>
+
+        <section class="vault-list" id="reviewsContainer">
+            
+            <div class="vault-review-item" data-genre="action">
+                <div class="review-header">
+                    <h3>Marvel's Spider-Man Remastered</h3>
+                    <span class="star-rating">10/10 ★★★★★</span>
+                </div>
+                <p class="description">
+                    <strong>Gameplay:</strong> Rhythmic fluid freeflow combat mixed with high-velocity web momentum. 
+                    <strong>Graphics:</strong> Flawless ray-traced Manhattan skyline presentation. 
+                    <strong>Community Impact:</strong> Set the baseline blueprint for how superhero adaptations should handle movement parameters.
+                </p>
+                <div class="opinion-box">
+                    <strong>My Personal Verdict:</strong> I absolutely loved this game. Pushing all the way to 100% completion felt natural because hunting collectibles actually forced me to perfect my parkour and swinging skills.
+                </div>
+                <div class="pro-con-container">
+                    <div class="pro-column"><strong>Pros:</strong> + Spectacular web swinging physics + Emotional story</div>
+                    <div class="con-column"><strong>Cons:</strong> - Screwball side challenges can feel repetitive</div>
+                </div>
+                <a href="game-detail.html" class="review-link">View Full 100% Breakdown &rarr;</a>
+            </div>
+
+            <div class="vault-review-item" data-genre="sandbox">
+                <div class="review-header">
+                    <h3>Minecraft</h3>
+                    <span class="star-rating">9.5/10 ★★★★★</span>
+                </div>
+                <p class="description">
+                    <strong>Gameplay:</strong> Endless procedurally generated box manipulation. 
+                    <strong>Graphics:</strong> Iconic retro pixel design elements that instantly catch the eye. 
+                    <strong>Community Impact:</strong> The highest-selling title of all time, redefining user modifications and open-ended structural design.
+                </p>
+                <div class="opinion-box">
+                    <strong>My Personal Verdict:</strong> A comfort title that never ages. Surviving the early night phases with close friends continues to hold up as a cornerstone multiplayer gaming experience.
+                </div>
+                <div class="pro-con-container">
+                    <div class="pro-column"><strong>Pros:</strong> + Limitless creative freedom + Excellent soundtrack</div>
+                    <div class="con-column"><strong>Cons:</strong> - Requires manual research for advanced redstone mechanics</div>
+                </div>
+            </div>
+
+            <div class="vault-review-item" data-genre="simulation">
+                <div class="review-header">
+                    <h3>Dispatch</h3>
+                    <span class="star-rating">8.5/10 ★★★★☆</span>
+                </div>
+                <p class="description">
+                    <strong>Gameplay:</strong> High-stress resource management where you dialogue with callers, trace signals, and deploy emergency squads. 
+                    <strong>Graphics:</strong> Minimalist, retro terminal interface that relies heavily on text and sound design. 
+                    <strong>Community Impact:</strong> Highly praised among indie developers for building immense tension purely through choice mechanics.
+                </p>
+                <div class="opinion-box">
+                    <strong>My Personal Verdict:</strong> The atmosphere is gripping. I sat down and successfully navigated every branching path to unlock all the endings in the base game. It requires serious multitasking! However, I decided not to pick up the paid DLC expansion since the core game wrapped up perfectly for me.
+                </div>
+                <div class="pro-con-container">
+                    <div class="pro-column"><strong>Pros:</strong> + Deeply stressful branching paths + Incredible voice acting</div>
+                    <div class="con-column"><strong>Cons:</strong> - Short overall runtime - DLC elements feel unnecessary</div>
+                </div>
+            </div>
+
+            <div class="vault-review-item" data-genre="action">
+                <div class="review-header">
+                    <h3>Grand Theft Auto V</h3>
+                    <span class="star-rating">9.2/10 ★★★★★</span>
+                </div>
+                <p class="description">
+                    <strong>Gameplay:</strong> Three-character multi-perspective campaign tracking high-stakes heist loops. 
+                    <strong>Graphics:</strong> Highly detailed cinematic simulation. 
+                    <strong>Community Impact:</strong> Formed an unmatched multi-decade cultural footprint through online updates and map scale.
+                </p>
+                <div class="opinion-box">
+                    <strong>My Personal Verdict:</strong> The structural scale of Los Santos remains unmatched. The single-player narrative transitions beautifully from casual driving to action blockbusters.
+                </div>
+                <div class="pro-con-container">
+                    <div class="pro-column"><strong>Pros:</strong> + Incredible campaign writing + Vast vehicle sandbox</div>
+                    <div class="con-column"><strong>Cons:</strong> - Multiplayer loading loops can feel slow</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© Nathan 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
